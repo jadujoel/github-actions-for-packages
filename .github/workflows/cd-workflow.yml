@@ -1,10 +1,13 @@
-
 name: Node CD
 
 on:
   push:
     paths:
       - "**Dockerfile**"
+      
+name: Node CI
+
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
